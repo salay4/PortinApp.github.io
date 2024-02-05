@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%; /* Make the button full width */
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#displayProtein {
+    margin-top: 20px;
+}
+
+.total-intake {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.protein-amount {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4caf50;
+}
+
+.no-intake {
+    font-size: 18px;
+    color: #333;
+}
+
+/* Media query for smartphones */
+@media only screen and (max-width: 600px) {
+    .container {
+        margin: 20px;
+    }
+}
+
+
+#confirmationModal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    z-index: 1000;
+}

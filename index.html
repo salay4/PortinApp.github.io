@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <title>Protein Tracker</title>
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <div class="container">
+        <h1>Protein Tracker</h1>
+        <p>Enter your daily protein intake:</p>
+        <label for="proteinInput">Protein (grams): </label>
+        <input type="number" id="proteinInput" placeholder="Enter protein grams">
+        <button onclick="addProtein()">ADD</button>
+        <p id="displayProtein"></p>
+        <button id="resetButton">Reset Protein Counter</button>
+        <p id="warningMessage" style="display: none; color: red;">Are you sure? This operation is irreversible.</p>
+        <button id="installButton" style="display: none;">Install App</button>
+        <p id="installedMessage" style="display: none;">App Installed!</p>
+    </div>
+
+    <div id="confirmationModal" style="display: none;">
+        <p>Are you sure? This operation is irreversible.</p>
+        <button id="confirmButton" onclick="resetProteinCounter()">Yes</button>
+        <button id="cancelButton" onclick="hideResetConfirmation()">No</button>
+    </div>
+
+    <script src="app.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('service-worker.js')
+                .then((registration) => {
+                    console.log('Service Worker registered with scope:', registration.scope);
+                })
+                .catch((error) => {
+                    console.error('Service Worker registration failed:', error);
+                });
+        }
+    </script>
+</body>
+</html>
