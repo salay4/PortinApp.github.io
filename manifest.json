@@ -1,6 +1,6 @@
 {
     "name": "Protein Tracker",
-    "short_name": "Protein_Tracker",
+    "short_name": "Protein Tracker",
     "description": "Track your daily protein intake",
     "start_url": "https://salay4.github.io/PortinApp.github.io/",
     "display": "standalone",
