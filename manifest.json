@@ -2,7 +2,7 @@
     "name": "Protein Tracker",
     "short_name": "Tracker",
     "description": "Track your daily protein intake",
-    "start_url": "/",
+    "start_url": "https://salay4.github.io/PortinApp.github.io/",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#4caf50",
