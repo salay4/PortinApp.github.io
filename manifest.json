@@ -10,5 +10,13 @@
         "src": "icon.png",
         "sizes": "192x192",
         "type": "image/png"
-    }]
+    }],
+    "commands": {
+        "resetProteinCounter": {
+            "suggested_key": {
+                "default": "Ctrl+Alt+R"
+            },
+            "description": "Reset Protein Counter"
+        }
+    }
 }
